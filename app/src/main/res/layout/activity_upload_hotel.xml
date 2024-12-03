@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uploadHotelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Upload_Hotel">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/lavender">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Data"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/upload_data"/>
+
+
+
+            <EditText
+                android:id="@+id/uploadHotelCode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Mã khách sạn"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadNameHotel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Tên khách sạn"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadCityHotel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Thành phố"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Địa chỉ"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelDes"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Mô tả khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelService"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Dịch vụ khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Chính sách khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelPolicyOf_BedandChildren"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Chính sách trẻ em và giường phụ"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/uploadHotelImportantInfor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Thông tin quan trọng"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Lưu"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

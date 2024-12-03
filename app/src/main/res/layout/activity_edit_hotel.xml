@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editHotelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Edit_Hotel">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/lavender">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Data"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/upload_data"/>
+
+
+
+            <EditText
+                android:id="@+id/editHotelCode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Mã khách sạn"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editNameHotel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Tên khách sạn"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editCityHotel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Thành phố"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Địa chỉ"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelDes"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Mô tả khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelService"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Dịch vụ khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Chính sách khách sạn"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelPolicyOf_BedandChildren"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Chính sách trẻ em và giường phụ"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/editHotelImportantInfor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:hint="Thông tin quan trọng"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/editBtn"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Sửa"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Xóa"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

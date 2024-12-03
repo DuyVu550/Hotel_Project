@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="230dp"
+    android:layout_height="190dp"
+    android:layout_margin="8dp"
+    android:id="@+id/cardviewHotelUser">
+
+    <ImageView
+        android:id="@+id/recpicUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@drawable/hotelimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name_for_popular"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Hotel_name"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Tên ks"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/City"
+            android:layout_below="@+id/Hotel_name"
+            android:layout_marginLeft="20dp"
+            android:text="Thành phố"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
